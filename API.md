@@ -1,4 +1,4 @@
-If your a developer and you want to create your custom pipe system from another plugin, you can use the following PipeAPI:
+If you're a developer and you want to create your custom pipe system from another plugin, you can use the following PipeAPI:
 
 ```java
 //Simply build a pipe
