@@ -39,7 +39,7 @@ PipeAPI.unregisterTransportPipesContainer(Location);
 ```
 
 In addition to this methods, there are several events you can use to get notified about important things:
-* **PipeExplodeEvent** - gets called when a pipe explodes due to too many items inside it. This event is not called when a pipe explodes because of a natural explosion.
+* **PipeExplodeEvent** - gets called when a pipe explodes due to too many items inside it. This event is not called when a pipe explodes due to a natural explosion.
 * **PlayerPlacePipeEvent** - when a player places a pipe.
 * **PlayerDestroyPipeEvent** - when a player destroys a pipes.
-* **PipeConnectionsChangeEvent** - gets called when a pipe changes its connections count. For example when a container block or another pipe is placed next to it.
+* **PipeConnectionsChangeEvent** - gets called when a pipe changes its connections amount. For example when a container block or another pipe is placed next to it.
