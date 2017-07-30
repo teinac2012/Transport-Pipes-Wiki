@@ -15,6 +15,7 @@ There are three config files managed by the plugin. You can find them here: Tran
 * **check_updates** - Enable to allow for automatic update check.
 * **destroy_pipe_on_explosion** - Whether to destroy pipes if a natural (TNT, Creeper) explosion occurs nearby.
 * **anticheat_plugins** - List all AntiCheat plugins running on your server here. If not listed here, some players may not be able to place or break pipes due to AntiCheat prevention.
+* **default_rendersystemId** - Specify which RenderSystem (Vanilla = 0, Modelled = 1) to use as default for new players.
 
 By adjusting the recipes.yml, you can change the crafting recipes for all pipes and the wrench item.
 A recipe is specified by the following keys:
