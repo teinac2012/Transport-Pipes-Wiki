@@ -12,4 +12,5 @@ All permissions needed for players to carry out certain actions are listed below
 * **transportpipes.craft.ironpipe** - craft an iron pipe.
 * **transportpipes.craft.voidpipe** - craft a void pipe.
 * **transportpipes.craft.wrench** - craft a wrench.
+
 By default all the craft permissions are true and the command permissions are false.
