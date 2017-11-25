@@ -10,12 +10,15 @@
 ## Config
 There are three config files managed by the plugin. You can find them here: TransportPipes/config.yml, TransportPipes/localization.yml and TransportPipes/recipes.yml. Inside the localization.yml file you can change every text displayed to your desired language. The config.yml file has several different options:
 * **max_items_per_pipe** - If the amount of items in one pipe exceeds this value, the pipe explodes in order to prevent lag issues.
-* **permissions** - Determine which permissions are needed to perform the given commands.
 * **crafting_enabled** - Disable this option to disable all pipe crafting recipes.
 * **check_updates** - Enable to allow for automatic update check.
 * **destroy_pipe_on_explosion** - Whether to destroy pipes if a natural (TNT, Creeper) explosion occurs nearby.
 * **anticheat_plugins** - List all AntiCheat plugins running on your server here. If not listed here, some players may not be able to place or break pipes due to AntiCheat prevention.
 * **default_rendersystemId** - Specify which RenderSystem (Vanilla = 0, Modelled = 1) to use as default for new players.
+* **default_renderdistance** - Specify the default render distance of pipes. (Can be changed individually by each player).
+* **default_showitems** - Specify the default value for the player-specific option "show items". This option allows you to visually hide all items flowing through the pipes.
+* **force_default_rendersystem** - By enabling this option you can force all players to use the render system given at _default_renderdistance_.
+* **custom_resourcepack** - Here you can specify the URL to a custom resourcepack. This can be used if your server uses two different server resourcepacks. Therefore these resourcepacks can be merged and the URL to the merged pack be given here. Set this option to "default" to use the default TransportPipes resourcepack and to automatically use an updated version of it if possible.
 
 By adjusting the recipes.yml, you can change the crafting recipes for all pipes and the wrench item.
 A recipe is specified by the following keys:
