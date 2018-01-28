@@ -1,12 +1,12 @@
 ![Logo](https://img2.picload.org/image/riwprwgr/logo.png)
 
-The Transport-Pipes plugin adds several different pipes into Minecraft. At the moment there are colored pipes, golden pipes, iron pipes, extraction pipes, void pipes and ice pipes. Similar to the BuildCraft mod, these pipes can transport any kind of item. In the following wiki you will learn how to craft and use this pipes and what the difference between those pipe types is. Also some basic information about the plugin's commands and config is described.
+The Transport-Pipes plugin adds several different pipes into Minecraft. At the moment there are colored pipes, golden pipes, iron pipes, extraction pipes, void pipes, ice pipes and crafting pipes. Similar to the BuildCraft mod, these pipes can transport any kind of item. In the following wiki you will learn how to craft and use this pipes and what the difference between those pipe types is. Also some basic information about the plugin's commands and config is described.
 
 ## Dependencies
-TransportPipes depends only on ProtocolLib. In order for this plugin to work, make sure a recent version of ProtocolLib is installed on your server. You can download ProtocolLib here: <https://www.spigotmc.org/resources/protocollib.1997>
+TransportPipes depends on ProtocolLib. In order for this plugin to work, make sure a recent version of ProtocolLib is installed on your server. You can download ProtocolLib here: <https://www.spigotmc.org/resources/protocollib.1997>
 
 ## Features
-As explained above, you have to use different pipe types in different situations. Every pipe type and their purpose is listed below:
+As explained above, you have to use different pipe types in different situations. Every pipe type and it's purpose is listed below:
 * **Extraction Pipe**: This pipe is the only one which can extract items from container blocks. Container blocks are blocks which hold inventories: Chests, furnaces, hoppers, shulker boxes and much more. Extraction pipe don't connect to each other but they do connect with every other pipe and with container blocks of course. One extraction pipe only has one extract direction from where it extracts items. This direction is displayed by a different connection texture.
 You can change the extract direction as well as the extract condition by right-clicking the pipe with a wrench and choosing the desired option. The extract amount option gives you the opportunity to extract multiple items at once. You can filter which items get extracted by using the filter interface (explained at the Golden Pipe). Last but not least, the extract condition determines when to extract items. There are three extract conditions:
     * **needs redstone**: the pipe only extracts items if it's powered with a redstone signal.
@@ -16,6 +16,7 @@ You can change the extract direction as well as the extract condition by right-c
 * **Ice Pipe**: The Ice Pipe transports items as well as any other pipe. The only difference is the transport speed. Ice Pipes transport items four times faster than other pipes.
 * **Iron Pipe**: Iron Pipes can also be called "One-Way-Pipe". It's feature is that regardless of the direction an item comes from, it will always move into the desired output direction. You can change this output direction by right-clicking the pipe with a wrench.
 * **Void Pipe**: Void Pipes simply destroy all items which are moving inside them.
+* **Crafting Pipe**: The Crafting Pipe gives you the possibility to automate crafting processes. After specifying a crafting recipe, all items going into this Pipe will be cached and the result item is going to be crafted as soon as enough ingredients are cached. By right-clicking this Pipe with a wrench, first you can define the output direction in which the crafted items will go and second you can see the cached items, used to craft the result item. By shift-right-clicking this Pipe with a wrench, you can define the crafting recipe. Just place the ingredients in the given workbench matrix and save it by closing the inventory.
 * **Golden Pipe**: A Golden Pipe can sort items. Every output direction on the Golden Pipe has a specific color. By right-clicking this pipe with a wrench, a sorting inventory opens. You can put items in there to determine which items should go where. Every row in this inventory is referring to an output direction of the Golden Pipe. The color indicates which row refers to which output direction. By clicking on a color indicator inside this inventory, you can change the filtering mode for this output direction row. The filtering mode determines which values to compare when calculating the desired output direction for an incoming item.
 _In this context, **type** stands for the material of the item (e.g. the material of any colored wool is still wool). **Damage** stands for the durability of a tool item and in correlation to "non-tool" items, they determine the "damage" value (e.g. the damage value of wool is the color of the wool and the damage value of wood is the type of wood). **Block all** mode doesn't check any values, it blocks the hole direction. Therefore items can only move into the Golden Pipe through a blocked direction but never out this direction_. The following filtering modes exist:
   
@@ -25,7 +26,7 @@ _In this context, **type** stands for the material of the item (e.g. the materia
     * filter by type
     * block all
 
-In general, all pipes can put items into container blocks if they are connected to such but only extraction pipes can extract items from container blocks. Also as mentioned some times above, for some pipes you need a wrench. The crafting recipe for the wrench is given below. The wrench can be used simply by right-clicking the desired pipe.
+In general, all pipes can put items into container blocks if they are connected to such but only extraction pipes can extract items from container blocks. Also as mentioned many times above, for some pipes you need a wrench. The crafting recipe for the wrench is given below. The wrench can be used simply by right-clicking the desired pipe.
 
 ## Crafting Recipes
 All crafting recipes can be changed in the config but the default ones are as follows:
@@ -48,6 +49,9 @@ All crafting recipes can be changed in the config but the default ones are as fo
 
 ### Void Pipe:
 ![Void Pipe](https://img2.picload.org/image/rwrlwwda/voidpipe.png)
+
+### Crafting Pipe:
+![Crafting Pipe](https://img2.picload.org/image/rwrlwwda/voidpipe.png)
 
 ### Wrench:
 ![Wrench](https://img2.picload.org/image/rwrlwwdl/wrench.png)
