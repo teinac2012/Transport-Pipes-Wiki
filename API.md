@@ -3,10 +3,10 @@ If you're a developer and you want to create your custom pipe system from anothe
 ```java
 //Builds a pipe at the given location. Additionally you can determine which type and which color the pipe should have.
 //The PipeColor is ignored if PipeType is not COLORED.
-PipeAPI.buildPipe(Location, PipeType, PipeColor);
+PipeAPI.buildPipe(Location blockLoc, PipeType pipeType, PipeColor pipeColor);
 
 //Detroys the pipe at the given location.
-PipeAPI.destroyPipe(Location);
+PipeAPI.destroyDuct(Location blockLoc);
 
 //Returns the current ticks per second of the TransportPipes thread.
 PipeAPI.getTPS();
@@ -16,33 +16,34 @@ PipeAPI.getTPS();
 PipeAPI.getMaxTPS();
 
 //Returns the amount of pipes in all worlds.
-PipeAPI.getPipeCount();
+PipeAPI.getDuctCount();
 
 //Returns the amount of pipes in the given world.
-PipeAPI.getPipeCount(World);
+PipeAPI.getDuctCount(World world);
 
-//Checks whether at the given location is a pipe.
-PipeAPI.isPipe(Location);
+//Checks whether at the given location is a pipe (just set ductType to DuctType.PIPE).
+PipeAPI.isDuct(Location blockLoc, DuctType ductType);
 
 //Returns the pipe object at the given location or null if there is no pipe.
-PipeAPI.getPipeAtLocation(Location);
+PipeAPI.getPipeAtLocation(Location blockLoc);
 
 //Destroys all pipes in this world.
-PipeAPI.destroyPipes(World);
+PipeAPI.destroyDucts(World world);
 
-//Puts any item into the given pipe object with a moving direction of "itemDirection".
-PipeAPI.putItemInPipe(Pipe, ItemData, PipeDirection);
+//Puts "item" into the given pipe with a moving direction of "itemDirection".
+PipeAPI.putItemInPipe(Pipe pipe, ItemStack item, WrappedDirection itemDirection);
 
 //Registers a custom container block at the given location. Every pipe around this block will try to extract/insert items from/into this container.
 //Create your own implementation of the TransportPipesContainer interface in order to specify which items to extract and where inserted items should go.
-PipeAPI.registerTransportPipesContainer(Location, TransportPipesContainer);
+PipeAPI.registerTransportPipesContainer(Location blockLoc, TransportPipesContainer container);
 
-//Unregisters a custom container block. See PipeAPI.registerTransportPipesContainer(Location, TransportPipesContainer).
-PipeAPI.unregisterTransportPipesContainer(Location);
+//Unregisters a custom container block. See PipeAPI.registerTransportPipesContainer(Location blockLoc, TransportPipesContainer container).
+PipeAPI.unregisterTransportPipesContainer(Location blockLoc);
 ```
 
 In addition to this methods, there are several events you can use to get notified about important things:
-* **PipeExplodeEvent** - gets called when a pipe explodes due to too many items inside it. This event is not called when a pipe explodes due to a natural explosion.
-* **PlayerPlacePipeEvent** - when a player places a pipe.
-* **PlayerDestroyPipeEvent** - when a player destroys a pipes.
-* **PipeConnectionsChangeEvent** - gets called when a pipe changes its connections amount. For example when a container block or another pipe is placed next to it.
+* **PlayerPlaceDuctEvent** - when a player places a duct (you have to check for DuctType.PIPE).
+* **PlayerDestroyDuctEvent** - when a player destroys a duct (you have to check for DuctType.PIPE).
+* **DuctConnectionsChangeEvent** - gets called when a duct changes its connections amount. For example when a container block or another duct is placed next to it (you have to check for DuctType.PIPE).
+* **DuctRegistrationEvent** - abstract level of PlayerPlaceDuctEvent. This event also gets called when another plugin registers a duct or a duct gets loaded from the save file.
+* **DuctUnregistrationEvent** - abstract level of PlayerDestroyDuctEvent. This event also gets called when another plugin unregisters a duct.
