@@ -27,4 +27,4 @@ A recipe is specified by the following keys:
 * **amount** - The amount of the crafted result item.
 * **shape** - Only if type is shaped. Every entry in this list describes a row in the crafting table. Every char describes an item.
 * **ingredients** - if type is shaped: For every char you have to specify the item to use. (\<itemID\>:\<itemDamage\>)
-if type is shapeless: Just list all items (\<itemID\>:\<itemDamage\>) that are needed to craft the desired item. Just write "pipe" instead of \<itemID\>:\<itemDamage\> to use a pipe item.
+if type is shapeless: Just list all items (\<itemID\>:\<itemDamage\>) that are needed to craft the desired item. Just write "pipe" instead of \<itemID\>:\<itemDamage\> to use a pipe item. If you just write <itemID> (without the damage value) this refers to all items with this ID, regardless of their damage value (e.g. just write 5 to refer to wood and ignore the type of wood)
