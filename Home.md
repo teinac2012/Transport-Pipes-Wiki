@@ -51,7 +51,7 @@ All crafting recipes can be changed in the config but the default ones are as fo
 ![Void Pipe](https://img2.picload.org/image/rwrlwwda/voidpipe.png)
 
 ### Crafting Pipe:
-![Crafting Pipe](https://img2.picload.org/image/rwrlwwda/voidpipe.png)
+![Crafting Pipe](https://img2.picload.org/image/ddpadlrw/crafting_craftingpipe.png)
 
 ### Wrench:
 ![Wrench](https://img2.picload.org/image/rwrlwwdl/wrench.png)
