@@ -1,11 +1,8 @@
 All permissions needed for players to carry out certain actions, are listed below:
 * **transportpipes.tps** - perform the _/tpipes tps_ command.
-* **transportpipes.reload** - perform the _/tpipes reload_ command.
-* **transportpipes.update** - perform the _/tpipes update_ command.
 * **transportpipes.creative** - perform the _/tpipes creative_ command.
-* **transportpipes.save** - perform the _/tpipes save_ command.
-* **transportpipes.delete** - perform the _/tpipes delete_ command.
-* **transportpipes.craft.coloredpipe** - craft a colored pipe. (The normal pipe is a white colored pipe)
+* **transportpipes.settings** - perform the _/tpipes settings_ command
+* **transportpipes.craft.coloredpipe** - craft a colored pipe. (The default pipe is a white colored pipe)
 * **transportpipes.craft.extractionpipe** - craft an extraction pipe.
 * **transportpipes.craft.goldenpipe** - craft a golden pipe.
 * **transportpipes.craft.icepipe** - craft an icepipe.
@@ -14,4 +11,4 @@ All permissions needed for players to carry out certain actions, are listed belo
 * **transportpipes.craft.craftingpipe** - craft a crafting pipe.
 * **transportpipes.craft.wrench** - craft a wrench.
 
-By default all the craft permissions are true and the command permissions are false.
+By default all the permissions except for tps and creative are true.
