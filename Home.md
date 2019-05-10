@@ -30,6 +30,9 @@ There are the following filter strictness options:
 
 In general, all pipes can put items into container blocks if they are connected to such but only extraction pipes can extract items from container blocks. Also as mentioned many times above, to configure pipes you need a wrench. The crafting recipe for the wrench is given below. The wrench can be used simply by right-clicking the desired pipe.
 
+Every pipe can be obfuscated with a solid block by simply right-clicking the pipe with a block in hand. This will place the block at the pipes' location and therefore obfuscate it. Although an obfuscated pipe won't be visible in this state, it still works as normal. Therefore this obfuscation feature can be used to increase FPS in a complex pipe system.
+Just break the block as normal to undo the obfuscation. To simply reveal obfuscated pipes for a couple of seconds without disabling the obfuscation, just shift-click with the wrench in hand. This affects only the player who clicked the wrench.
+
 ## Crafting Recipes
 Crafting recipes can be disabled in the config file which allows you to use any external "custom recipes" plugin to implement different recipes. Nevertheless the following recipes are the default ones:
 
