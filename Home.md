@@ -1,4 +1,4 @@
-![Logo](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/recode/src/main/resources/wiki/logo.png)
+![Logo](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/logo.png)
 
 The Transport-Pipes plugin adds several different pipes into Minecraft. At the moment there are colored pipes, golden pipes, iron pipes, extraction pipes, void pipes, ice pipes and crafting pipes. Similar to the BuildCraft mod, these pipes can transport any kind of item. In the following wiki you will learn how to craft and use this pipes and what the difference between those pipe types is. Also some basic information about the plugin's commands and config is described.
 
@@ -37,26 +37,26 @@ Just break the block as normal to undo the obfuscation. To simply reveal obfusca
 Crafting recipes can be disabled in the config file which allows you to use any external "custom recipes" plugin to implement different recipes. Nevertheless the following recipes are the default ones:
 
 ### Colored Pipe:
-![White Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/recode/src/main/resources/wiki/recipes/white.png)
-![Colored Pipes](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/recode/src/main/resources/wiki/recipes/colors.gif)
+![White Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/recipes/white.png)
+![Colored Pipes](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/recipes/colors.gif)
 
 ### Golden Pipe:
-![Golden Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/recode/src/main/resources/wiki/recipes/gold.png)
+![Golden Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/recipes/gold.png)
 
 ### Iron Pipe:
-![Iron Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/recode/src/main/resources/wiki/recipes/iron.png)
+![Iron Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/recipes/iron.png)
 
 ### Extraction Pipe:
-![Extraction Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/recode/src/main/resources/wiki/recipes/extraction.png)
+![Extraction Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/recipes/extraction.png)
 
 ### Ice Pipe:
-![Ice Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/recode/src/main/resources/wiki/recipes/ice.png)
+![Ice Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/recipes/ice.png)
 
 ### Void Pipe:
-![Void Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/recode/src/main/resources/wiki/recipes/void.png)
+![Void Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/recipes/void.png)
 
 ### Crafting Pipe:
-![Crafting Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/recode/src/main/resources/wiki/recipes/crafting.png)
+![Crafting Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/recipes/crafting.png)
 
 ### Wrench:
-![Wrench](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/recode/src/main/resources/wiki/recipes/wrench.png)
+![Wrench](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/recipes/wrench.png)
