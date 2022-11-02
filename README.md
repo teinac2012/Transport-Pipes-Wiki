@@ -1,5 +1,5 @@
 # Tuberias-Yayicraft-Wiki
-![Logo](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/logo.png)
+![Logo](https://github.com/teinac2012/Transport-Pipes-Wiki/raw/master/nuevo_cartel_comunidad.png))
 
 El complemento YayiTuberias agrega varias tuberías diferentes a Minecraft. Actualmente hay tubos de colores, tubos dorados, tubos de hierro, tubos de extracción, tubos vacíos, tubos de hielo y tubos de artesanía. Al igual que el mod BuildCraft, estas tuberías pueden transportar cualquier tipo de artículo. En el siguiente wiki, aprenderá cómo crear y usar estas tuberías y cuál es la diferencia entre esos tipos de tuberías. También se describe información básica sobre los comandos y la configuración del complemento.
 
