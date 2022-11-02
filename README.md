@@ -1,42 +1,39 @@
-# Transport-Pipes-Wiki
+# Tuberias-Yayicraft-Wiki
 ![Logo](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/logo.png)
 
-El complemento Transport-Pipes agrega varias tuberías diferentes a Minecraft. Actualmente hay tubos de colores, tubos dorados, tubos de hierro, tubos de extracción, tubos vacíos, tubos de hielo y tubos de artesanía. Al igual que el mod BuildCraft, estas tuberías pueden transportar cualquier tipo de artículo. En el siguiente wiki, aprenderá cómo crear y usar estas tuberías y cuál es la diferencia entre esos tipos de tuberías. También se describe información básica sobre los comandos y la configuración del complemento.
-## Dependencias
-TransportPipes depende de ProtocolLib. Para que este complemento funcione, asegúrese de que una versión reciente de ProtocolLib esté instalada en su servidor. Puede descargar ProtocolLib aquí: <https://www.spigotmc.org/resources/protocollib.1997>
+El complemento YayiTuberias agrega varias tuberías diferentes a Minecraft. Actualmente hay tubos de colores, tubos dorados, tubos de hierro, tubos de extracción, tubos vacíos, tubos de hielo y tubos de artesanía. Al igual que el mod BuildCraft, estas tuberías pueden transportar cualquier tipo de artículo. En el siguiente wiki, aprenderá cómo crear y usar estas tuberías y cuál es la diferencia entre esos tipos de tuberías. También se describe información básica sobre los comandos y la configuración del complemento.
 
-## Features
+
+## Funciones
 Como se explicó anteriormente, debe usar diferentes tipos de tuberías en diferentes situaciones. Cada tipo de tubería y su propósito se enumeran a continuación:
-* **Extraction Pipe**: This pipe is the only one which can extract items from container blocks. Container blocks are blocks which hold inventories: Chests, furnaces, hoppers, shulker boxes and so on. Extraction pipes don't connect to each other but they do connect with every other pipe and with container blocks of course. One extraction pipe only has one extract direction from where it extracts items. This direction is displayed by a different connection texture.
-You can change the extract direction as well as the extract condition by right-clicking the pipe with a wrench and choosing the desired option. The extract amount option allows you to extract multiple items in a single tick. You can filter which items get extracted by using the filter interface (explained in detail at the Golden Pipe section). Last but not least, the extract condition determines when to extract items. There are three extract conditions:
-    * **needs redstone**: the pipe only extracts items if it's powered with a redstone signal.
-    * **always extract**: the pipe always extracts items regardless of whether it's powered with redstone or not.
-    * **never extract**: the pipe never extracts items.
-* **Colored Pipe**: This is the simplest pipe. Its only purpose is to transport items. Nevertheless you can dye this kind of pipe. Different colored pipes behave the same but don't connect to each other. Therefore you can create complex pipe system without having to worry about leaving enough space between pipes. The white colored pipe has a special role: It is the default pipe and therefore connects to any other neighboring pipe.
-* **Ice Pipe**: The Ice Pipe transports items in the same way as every other pipe does. The only difference is the transport speed. Ice Pipes transport items four times faster than other pipes.
-* **Iron Pipe**: Iron Pipes are basically "One-Way-Pipes". Regardless of the direction an item comes from, it will always move into the desired output direction. You can change this output direction by right-clicking the pipe with a wrench. This output direction is marked by a yellow texture.
-* **Void Pipe**: Void Pipes simply destroy all items which are moving inside them.
-* **Crafting Pipe**: The Crafting Pipe gives you the possibility to automate crafting processes. After specifying a crafting recipe, all items going into this Pipe will be cached and the result item is going to be crafted as soon as enough ingredients are stored inside. By right-clicking this Pipe with a wrench, first you can define the output direction in which the crafted items will go, second you can see the cached items, used to craft the result item and last but not least you can define the crafting recipe.
-* **Golden Pipe**: A Golden Pipe can sort items. Every output direction on the Golden Pipe has a specific color. By right-clicking this pipe with a wrench, a sorting inventory opens. You can put items in there to determine which items should go where. Every row in this inventory refers to an output direction of the Golden Pipe. The color indicates which row refers to which output direction. By clicking a color indicator (wool block) inside this inventory, you can change the filter mode and the filter strictness for this output direction. The filter strictness determines how strict to compare items when calculating the desired output direction for an incoming item and the filter mode gives information about how this filter should be applied.
+* **Tubo de extracción**: Este tubo es el único que puede extraer elementos de los bloques de contenedores. Los bloques de contenedores son bloques que contienen inventarios: cofres, hornos, tolvas, cajas de shulker, etc. Las tuberías de extracción no se conectan entre sí, pero sí se conectan con todas las demás tuberías y, por supuesto, con bloques de contenedores. Una tubería de extracción solo tiene una dirección de extracción de donde extrae elementos. Esta dirección se muestra mediante una textura de conexión diferente. Puede cambiar la dirección del extracto, así como la condición del extracto, haciendo clic con el botón derecho en la tubería con una llave inglesa y eligiendo la opción deseada. La opción extraer cantidad le permite extraer varios elementos en un solo tick. Puede filtrar qué elementos se extraen utilizando la interfaz de filtro (explicada en detalle en la sección Tubería dorada). Por último, pero no menos importante, la condición de extracción determina cuándo extraer elementos. Hay tres condiciones de extracción:
+    * **Necesita Redstone**: La tubería solo extrae elementos si está alimentada con una señal Redstone..
+    * **Extraer siempre**: La tubería siempre extrae elementos independientemente de si está alimentada con Redstone o no.
+    * **Nunca extraer**: la tubería nunca extrae elementos.
+* **Tubo de color**:  Este es el tubo más simple. Su único propósito es transportar artículos. Sin embargo, puedes teñir este tipo de pipa. Las tuberías de diferentes colores se comportan de la misma manera, pero no se conectan entre sí. Por lo tanto, puede crear un sistema de tuberías complejo sin tener que preocuparse por dejar suficiente espacio entre las tuberías. La tubería de color blanco tiene un papel especial: es la tubería predeterminada y, por lo tanto, se conecta a cualquier otra tubería vecina.
+* **Tubería de hielo**: La tubería de hielo transporta artículos de la misma manera que cualquier otra tubería. La única diferencia es la velocidad de transporte. Las tuberías de hielo transportan artículos cuatro veces más rápido que otras tuberías.
+* **Tubería de hierro**: Las tuberías de hierro son básicamente "tuberías unidireccionales". Independientemente de la dirección de la que provenga un elemento, siempre se moverá en la dirección de salida deseada. Puede cambiar esta dirección de salida haciendo clic con el botón derecho en la tubería con una llave inglesa. Esta dirección de salida está marcada por una textura amarilla.
+* **Void Pipe**: Void Pipes simplemente destruye todos los elementos que se mueven dentro de ellos.
+* **Crafting Pipe**: El Crafting Pipe te da la posibilidad de automatizar los procesos de elaboración. Después de especificar una receta de elaboración, todos los elementos que ingresan a esta tubería se almacenarán en caché y el elemento resultante se elaborará tan pronto como se almacenen suficientes ingredientes en su interior. Al hacer clic con el botón derecho en esta tubería con una llave inglesa, primero puede definir la dirección de salida en la que irán los elementos elaborados, en segundo lugar, puede ver los elementos almacenados en caché, utilizados para crear el elemento de resultado y, por último, pero no menos importante, puede definir la receta de elaboración.
+* **Tubo de oro**:  El tubo de oro puede ordenar artículos. Cada dirección de salida en la tubería dorada tiene un color específico. Al hacer clic con el botón derecho en esta tubería con una llave inglesa, se abre un inventario de clasificación. Puede colocar elementos allí para determinar qué elementos deben ir a dónde. Cada fila de este inventario se refiere a una dirección de salida de la Tubería Dorada. El color indica qué fila se refiere a qué dirección de salida. Al hacer clic en un indicador de color (bloque de lana) dentro de este inventario, puede cambiar el modo de filtro y el rigor del filtro para esta dirección de salida. El rigor del filtro determina qué tan estricto es comparar elementos al calcular la dirección de salida deseada para un elemento entrante y el modo de filtro proporciona información sobre cómo se debe aplicar este filtro.
 
-There are the following filter modes:
-  * **Normal**: the default filter mode. It only accepts an item if it fits with at least one filter item inside this row
-  * **Inverted**: compares items the same way as Normal filter mode but inverts the result which will block all items except the ones inside this filter row
-  * **Block all**: simply blocks all items
+Existen los siguientes modos de filtro:
+  * **Normal**: el modo de filtro predeterminado. Solo acepta un elemento si encaja con al menos un elemento de filtro dentro de esta fila
+  * **Invertido**: compara los elementos de la misma manera que el modo de filtro normal, pero invierte el resultado, lo que bloqueará todos los elementos excepto los que están dentro de esta fila de filtro
+  * **Bloquear todo**: simplemente bloquea todos los elementos
 
-There are the following filter strictness options:
-  * **Item material**: only checks if the Material of the item fits with the filter comparison item (ignores metadata)
-  * **Item material and metadata**: checks if the comparison item is exactly the same as the the checked item
+Existen las siguientes opciones de rigor del filtro:
+  * **Material del artículo**: solo comprueba si el material del artículo encaja con el elemento de comparación de filtros (ignora los metadatos)
+  * **Material y metadatos del artículo**: comprueba si el elemento de comparación es exactamente el mismo que el elemento comprobado
 
-In general, all pipes can put items into container blocks if they are connected to such but only extraction pipes can extract items from container blocks. Also as mentioned many times above, to configure pipes you need a wrench. The crafting recipe for the wrench is given below. The wrench can be used simply by right-clicking the desired pipe.
+En general, todas las tuberías pueden colocar elementos en bloques de contenedores si están conectados a ellos, pero solo las tuberías de extracción pueden extraer elementos de los bloques de contenedores. También como se mencionó muchas veces anteriormente, para configurar tuberías necesita una llave inglesa. La receta de elaboración de la llave inglesa se da a continuación. La llave se puede utilizar simplemente haciendo clic con el botón derecho en la tubería deseada.
 
-Every pipe can be obfuscated with a solid block by simply right-clicking the pipe with a block in hand. This will place the block at the pipes' location and therefore obfuscate it. Although an obfuscated pipe won't be visible in this state, it still works as normal. Therefore this obfuscation feature can be used to increase FPS in a complex pipe system.
-Just break the block as normal to undo the obfuscation. To simply reveal obfuscated pipes for a couple of seconds without disabling the obfuscation, just shift-click with the wrench in hand.
+Cada tubería se puede ofuscar con un bloque sólido simplemente haciendo clic derecho en la tubería con un bloque en la mano. Esto colocará el bloque en la ubicación de las tuberías y, por lo tanto, lo ofuscará. Aunque una tubería ofuscada no será visible en este estado, todavía funciona normalmente. Por lo tanto, esta característica de ofuscación se puede utilizar para aumentar FPS en un sistema de tuberías complejo. Simplemente rompa el bloque como de costumbre para deshacer la ofuscación. Para revelar simplemente tuberías ofuscadas durante un par de segundos sin deshabilitar la ofuscación, simplemente haga clic con la llave inglesa en la mano.
 
-## Crafting Recipes
-Crafting recipes can be disabled in the config file which allows you to use any external "custom recipes" plugin to implement different recipes. Nevertheless the following recipes are the default ones:
+## Elaboración de recetas
+La elaboración de recetas se puede deshabilitar en el archivo de configuración, lo que le permite usar cualquier complemento externo de "recetas personalizadas" para implementar diferentes recetas. Sin embargo, las siguientes recetas son las predeterminadas:
 
-### Colored Pipe:
+### Tubo de color:
 ![White Pipe](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/recipes/white.png)
 ![Colored Pipes](https://raw.githubusercontent.com/RoboTricker/Transport-Pipes/master/src/main/resources/wiki/recipes/colors.gif)
 
